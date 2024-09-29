@@ -7,9 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <style>
       .atkinson-hyperlegible-bold {
-      font-family: "Atkinson Hyperlegible", sans-serif;
-      font-weight: 900;
-      font-style: normal;
+        font-family: "Atkinson Hyperlegible", sans-serif;
+        font-weight: 900;
+        font-style: normal;
       }
       h1.thicker {
         font-weight: 900;
@@ -18,169 +18,150 @@
     <meta name="viewport" content="width=device-width">
     <style>
       .button {
-  background-color: #e7b34b; 
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-.button2 {padding: 12px 28px;}
+        background-color: #e7b34b; 
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      .button2 {padding: 12px 28px;}
+      
       .popup {
-          position: fixed;
-          z-index: 1;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          overflow: auto;
-          background-color: rgba(0,
-                  0,
-                  0,
-                  0.4);
-          display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: none;
       }
 
       .popup-content {
-          background-color: white;
-          margin: 10% auto;
-          padding: 20px;
-          border: 1px solid #888888;
-          width: 30%;
-          font-weight: bolder;
+        background-color: white;
+        margin: 10% auto;
+        padding: 20px;
+        border: 1px solid #888888;
+        width: 30%;
+        font-weight: bolder;
       }
 
       .popup-content button {
-          display: block;
-          margin: 0 auto;
+        display: block;
+        margin: 0 auto;
       }
 
       .show {
-          display: block;
+        display: block;
       }
-  </style>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-  body {
-    font-family: Arial;
-  }
-  
-  .split {
-    height: 92%;
-    width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 8%;
-    overflow-x: hidden;
-    padding-top: 20px;
-  }
-  
-  .left {
-    left: 0;
-    background-color: #161925;
-  }
-  
-  .right {
-    right: 0;
-    background-color: #b64116;
-  }
-  
-  #top{
-  height:20%;
-  width:100%;
-  }
-  </style>
-    <title>JukeBox</title>
-    <body style="background-color:#161925;">
-    </body>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    
-    
 
+      .split {
+        height: 92%;
+        width: 50%;
+        position: fixed;
+        z-index: 1;
+        top: 8%;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+  
+      .left {
+        left: 0;
+        background-color: #161925;
+        color: white;
+      }
+  
+      .right {
+        right: 0;
+        background-color: #b64116;
+        color: white;
+      }
+  
+      #top {
+        height: 20%;
+        width: 100%;
+      }
+    </style>
+    <title>JukeBox</title>
   </head>
-  <body>
+
+  <body style="background-color:#161925;">
     <nav class="reg" style="background-color: #b64116" role="navigation">
-     <div class="nav-wrapper container" style="background-color: #b64116">
-      <a href="https://example.com">
-        <img src="/Users/arshiagarg/Downloads/Designer.jpeg" width="64" height="64" alt="Button Image">
-      </a>
-      
-      <ul class="right hide-on-med-and-down">
-        <li>
-          <button id="myButton" style="background-color: #e7b34b; padding: 12px 28px; margin-right: 16px; cursor: pointer; color: white;">About</button>
-    <div id="myPopup" class="popup">
-        <div class="popup-content" style="background-color: #161925;">
-            <h1 style="color: #e7b34b; font-size:3vw">
-                About JukeBox
-            </h1>
-            <p style="line-height: 1.4;font-weight: 300">Welcome to JukeBox! A safe and efficient way for guests to request songs at a party. 
-              Get rid of duplicates and say good bye to explicit content. Let's keep this party going!</p>
-            <button id="closePopup" style="background-color: #b64116; color: white; padding: 12px 28px;">
-                Close
-            </button>
-        </div>
+      <div class="nav-wrapper container" style="background-color: #b64116">
+        <a href="https://example.com">
+          <img src="/Users/arshiagarg/Downloads/Designer.jpeg" width="64" height="64" alt="Button Image">
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <button id="myButton" style="background-color: #e7b34b; padding: 12px 28px; margin-right: 16px; cursor: pointer; color: white;">About</button>
+            <div id="myPopup" class="popup">
+              <div class="popup-content" style="background-color: #161925;">
+                <h1 style="color: #e7b34b; font-size:3vw">About JukeBox</h1>
+                <p style="line-height: 1.4;font-weight: 300">Welcome to JukeBox! A safe and efficient way for guests to request songs at a party. 
+                  Get rid of duplicates and say goodbye to explicit content. Let's keep this party going!</p>
+                <button id="closePopup" style="background-color: #b64116; color: white; padding: 12px 28px;">Close</button>
+              </div>
+            </div>
+            <script>
+              myButton.addEventListener("click", function () {
+                myPopup.classList.add("show");
+              });
+              closePopup.addEventListener("click", function () {
+                myPopup.classList.remove("show");
+              });
+              window.addEventListener("click", function (event) {
+                if (event.target == myPopup) {
+                  myPopup.classList.remove("show");
+                }
+              });
+            </script>
+          </li>
+          <li>
+            <input type="text" style="padding: 12px" placeholder="Search Website...">
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Left side: Form for submitting lyrics -->
+    <div class="split left">
+      <h4 style="margin-left: 16px; color: #e7b34b;">Upload Lyrics</h4>
+      <form id="lyricsForm" style="margin-left: 16px;">
+        <textarea id="lyricsInput" rows="10" cols="40" placeholder="Enter song lyrics here..."></textarea><br><br>
+        <button type="submit" class="button button2">Submit Lyrics</button>
+      </form>
+    </div>
+
+    <!-- Right side: Display profanity level -->
+    <div class="split right">
+      <h4 style="margin-left: 16px; color: white;">Explicit Level</h4>
+      <div id="analysisResult" style="margin-left: 32px; margin-right: 32px;">
+        <p style="color: white;">Submit lyrics to see the analysis result.</p>
+      </div>
     </div>
 
     <script>
-        myButton.addEventListener(
-            "click",
-            function () {
-                myPopup.classList.add("show");
-            }
-        );
-        closePopup.addEventListener(
-            "click",
-            function () {
-                myPopup.classList.remove(
-                    "show"
-                );
-            }
-        );
-        window.addEventListener(
-            "click",
-            function (event) {
-                if (event.target == myPopup) {
-                    myPopup.classList.remove(
-                        "show"
-                    );
-                }
-            }
-        );
-    </script>
-          <a class="" >     </a>
-        </li>
-        <li>
-          <input type="text black" style="padding: 12px"  placeholder="Search Website...">
-        </li>
-      </ul>
-      <ul id="nav-mobile" class="right sidenav">
-        <li>
-          <!--waves modal button-->
-          <a class="modal-trigger waves-effect btn-large" href="#modal1">About</a>
-        </li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="right sidenav-trigger">
-        <i class="material-icons">menu</i>
-      </a>
-    
-    </div>
-  </nav>
-  
-    <div class="split left">
-        <h4 style="margin-left: 16px; color: #058789;">Requested Song Lyrics</h4>
-        <p style="margin-left: 32px; margin-right: 32px; color: #058789;">_______________________________________________________________________________</p>
-    </div>
-    
-    <div class="split right">
-        <h4 style="margin-left: 16px; color: white;">Explicit Level</h4>
-        <p style="margin-left: 32px; margin-right: 32px; color: white;">_______________________________________________________________________________</p>
-    </div>
+      // Handling form submission and displaying analysis result
+      document.getElementById('lyricsForm').onsubmit = async (event) => {
+        event.preventDefault();
+        
+        const lyrics = document.getElementById('lyricsInput').value;
 
-      <script src="script.js"></script>
+        // Here you'd typically call your backend API to analyze the lyrics
+        // Simulating an analysis result for demonstration
+        const profanityScore = Math.floor(Math.random() * 101); // Simulate a score between 0-100%
+        
+        // Displaying the result on the right side
+        document.getElementById('analysisResult').innerHTML = `
+          <p style="color: white;">Profanity Score: <strong>${profanityScore}%</strong></p>
+        `;
+      };
+    </script>
+
   </body>
 </html>
